@@ -1,0 +1,45 @@
+footer {
+  height: fit-content;
+  .start {
+    flex-wrap: wrap;
+    z-index: 20;
+    position: relative;
+    top: 3.5rem;
+    background-color: $th-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    height: 7rem;
+    padding: 20px;
+    justify-content: space-between;
+    @media ($m-md) {
+      justify-content: center;
+      height: fit-content;
+      gap: 25px;
+    }
+    button {
+      padding: 8px 20px;
+      color: white;
+      text-transform: capitalize;
+      background: transparent;
+      border: $sc-color solid 2px;
+      &:hover {
+        background-color: #4acea236;
+      }
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .box {
+    span {
+      color: $pr-color;
+      font-weight: bold;
+    }
+    height: 8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

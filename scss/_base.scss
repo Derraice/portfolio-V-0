@@ -1,0 +1,75 @@
+// varaibles
+$pr-color: #ff4273;
+$sc-color: #5be9b9;
+$th-color: #141c3a;
+$pr-color-dark: #ff265e;
+$pr-font: Lexend;
+
+// my body
+body {
+  height: fit-content;
+  font-family: $pr-font;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+// mixins
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+}
+.circle {
+  border-radius: 50%;
+}
+.pr-color {
+  background-color: $pr-color;
+}
+.sc-color {
+  background-color: $sc-color;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center {
+  @include flex-center();
+}
+
+$m-mb: "max-width: 480px";
+$m-md: "max-width: 900px";
+
+// scrool bar customation
+
+/* width */
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: #141c3a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: $sc-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #028a5c;
+}
+
+// custom selection
+
+*::selection {
+  background-color: $pr-color !important;
+  color: white !important;
+}

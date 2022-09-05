@@ -1,0 +1,1903 @@
+body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: Lexend;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.pr-color {
+  background-color: #ff4273;
+}
+
+.sc-color {
+  background-color: #5be9b9;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: #141c3a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #5be9b9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #028a5c;
+}
+
+*::-moz-selection {
+  background-color: #ff4273 !important;
+  color: white !important;
+}
+
+*::selection {
+  background-color: #ff4273 !important;
+  color: white !important;
+}
+
+.intro {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transition: 1s ease-in-out;
+  z-index: 10000;
+}
+.intro .logo-video {
+  height: 30%;
+  width: 50%;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  z-index: 999;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+nav .menu-icon {
+  position: fixed;
+  top: 7px;
+  right: 8%;
+  background-color: #ff4273;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  transition: 1s all ease-in-out;
+  z-index: 10;
+}
+nav .tog {
+  z-index: 10;
+  padding: 0.9rem;
+  background-color: #000;
+  transform: rotate(360deg);
+}
+nav .logo {
+  width: 90px;
+  position: static;
+  cursor: pointer;
+  top: 0;
+  z-index: 76543;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.hero .bg {
+  width: 29%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .bg img {
+  pointer-events: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (max-width: 900px) {
+  .hero .bg {
+    display: none;
+  }
+}
+
+.text {
+  margin-top: 150px;
+  /* Container should be full height and full width */
+}
+.text h4 {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.text .h1-text {
+  width: 326px;
+  background-color: #000;
+  height: 70px;
+  /* background-color and color should be the same as the below otherwise it won't work */
+}
+.text .h1-text h1 {
+  color: #fff;
+  font-family: sans-serif;
+}
+.text .h1-text .sec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.text .h1-text .sec > .bg-video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.text .h1-text .sec > .h1 {
+  text-align: start;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  background-color: #000;
+  font-weight: 900;
+  font-size: 4rem;
+  font-family: sans-serif;
+  /* Mix Blend Mode does the all magic */
+  mix-blend-mode: multiply;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.text h3 {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #5be9b9;
+}
+.text p {
+  font-size: 0.9rem;
+  color: #e5e5e5;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.text .hero-btn {
+  width: 10rem;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+
+.boxs {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  position: absolute;
+  position: fixed;
+  z-index: 99;
+  grid-template-columns: repeat(4, auto);
+  display: none;
+}
+.boxs > div {
+  background-color: #ff4273;
+  z-index: 5;
+  height: 0%;
+}
+.boxs .b1 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.boxs .b2 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.boxs .b3 {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.boxs .b4 {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.real-nav {
+  position: relative;
+  position: fixed;
+  left: 8%;
+  transition: 1s ease-in-out;
+  z-index: 145;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 3rem 8rem;
+  padding-left: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  justify-content: space-between;
+  display: none;
+}
+@media (max-width: 480px) {
+  .real-nav {
+    padding: 0;
+    left: 0;
+    gap: 70px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.real-nav ul {
+  padding: 0;
+  margin: 0;
+}
+.real-nav ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .real-nav ul li {
+    text-align: center;
+  }
+}
+.real-nav li a {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 51px;
+  letter-spacing: 0.12em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+}
+.real-nav li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 7px;
+  bottom: 0;
+  left: 0;
+  background-color: #5be9b9;
+  transform-origin: bottom right;
+  transition: transform 0.45s ease-in-out;
+}
+.real-nav li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media (max-width: 480px) {
+  .real-nav li a {
+    text-align: center;
+  }
+}
+.real-nav .medai img {
+  height: 30px;
+  cursor: pointer;
+}
+.real-nav h3 {
+  margin-bottom: 30px;
+  font-family: Lexend;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 34px;
+  letter-spacing: 0.12em;
+  text-transform: capitalize;
+  color: #000000;
+}
+@media (max-width: 480px) {
+  .real-nav h3 {
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes menu-down {
+  0% {
+    height: 0%;
+  }
+  1% {
+    height: 1%;
+  }
+  2% {
+    height: 2%;
+  }
+  3% {
+    height: 3%;
+  }
+  4% {
+    height: 4%;
+  }
+  5% {
+    height: 5%;
+  }
+  6% {
+    height: 6%;
+  }
+  7% {
+    height: 7%;
+  }
+  8% {
+    height: 8%;
+  }
+  9% {
+    height: 9%;
+  }
+  10% {
+    height: 10%;
+  }
+  11% {
+    height: 11%;
+  }
+  12% {
+    height: 12%;
+  }
+  13% {
+    height: 13%;
+  }
+  14% {
+    height: 14%;
+  }
+  15% {
+    height: 15%;
+  }
+  16% {
+    height: 16%;
+  }
+  17% {
+    height: 17%;
+  }
+  18% {
+    height: 18%;
+  }
+  19% {
+    height: 19%;
+  }
+  20% {
+    height: 20%;
+  }
+  21% {
+    height: 21%;
+  }
+  22% {
+    height: 22%;
+  }
+  23% {
+    height: 23%;
+  }
+  24% {
+    height: 24%;
+  }
+  25% {
+    height: 25%;
+  }
+  26% {
+    height: 26%;
+  }
+  27% {
+    height: 27%;
+  }
+  28% {
+    height: 28%;
+  }
+  29% {
+    height: 29%;
+  }
+  30% {
+    height: 30%;
+  }
+  31% {
+    height: 31%;
+  }
+  32% {
+    height: 32%;
+  }
+  33% {
+    height: 33%;
+  }
+  34% {
+    height: 34%;
+  }
+  35% {
+    height: 35%;
+  }
+  36% {
+    height: 36%;
+  }
+  37% {
+    height: 37%;
+  }
+  38% {
+    height: 38%;
+  }
+  39% {
+    height: 39%;
+  }
+  40% {
+    height: 40%;
+  }
+  41% {
+    height: 41%;
+  }
+  42% {
+    height: 42%;
+  }
+  43% {
+    height: 43%;
+  }
+  44% {
+    height: 44%;
+  }
+  45% {
+    height: 45%;
+  }
+  46% {
+    height: 46%;
+  }
+  47% {
+    height: 47%;
+  }
+  48% {
+    height: 48%;
+  }
+  49% {
+    height: 49%;
+  }
+  50% {
+    height: 50%;
+  }
+  51% {
+    height: 51%;
+  }
+  52% {
+    height: 52%;
+  }
+  53% {
+    height: 53%;
+  }
+  54% {
+    height: 54%;
+  }
+  55% {
+    height: 55%;
+  }
+  56% {
+    height: 56%;
+  }
+  57% {
+    height: 57%;
+  }
+  58% {
+    height: 58%;
+  }
+  59% {
+    height: 59%;
+  }
+  60% {
+    height: 60%;
+  }
+  61% {
+    height: 61%;
+  }
+  62% {
+    height: 62%;
+  }
+  63% {
+    height: 63%;
+  }
+  64% {
+    height: 64%;
+  }
+  65% {
+    height: 65%;
+  }
+  66% {
+    height: 66%;
+  }
+  67% {
+    height: 67%;
+  }
+  68% {
+    height: 68%;
+  }
+  69% {
+    height: 69%;
+  }
+  70% {
+    height: 70%;
+  }
+  71% {
+    height: 71%;
+  }
+  72% {
+    height: 72%;
+  }
+  73% {
+    height: 73%;
+  }
+  74% {
+    height: 74%;
+  }
+  75% {
+    height: 75%;
+  }
+  76% {
+    height: 76%;
+  }
+  77% {
+    height: 77%;
+  }
+  78% {
+    height: 78%;
+  }
+  79% {
+    height: 79%;
+  }
+  80% {
+    height: 80%;
+  }
+  81% {
+    height: 81%;
+  }
+  82% {
+    height: 82%;
+  }
+  83% {
+    height: 83%;
+  }
+  84% {
+    height: 84%;
+  }
+  85% {
+    height: 85%;
+  }
+  86% {
+    height: 86%;
+  }
+  87% {
+    height: 87%;
+  }
+  88% {
+    height: 88%;
+  }
+  89% {
+    height: 89%;
+  }
+  90% {
+    height: 90%;
+  }
+  91% {
+    height: 91%;
+  }
+  92% {
+    height: 92%;
+  }
+  93% {
+    height: 93%;
+  }
+  94% {
+    height: 94%;
+  }
+  95% {
+    height: 95%;
+  }
+  96% {
+    height: 96%;
+  }
+  97% {
+    height: 97%;
+  }
+  98% {
+    height: 98%;
+  }
+  99% {
+    height: 99%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes menu-down {
+  0% {
+    height: 0%;
+  }
+  1% {
+    height: 1%;
+  }
+  2% {
+    height: 2%;
+  }
+  3% {
+    height: 3%;
+  }
+  4% {
+    height: 4%;
+  }
+  5% {
+    height: 5%;
+  }
+  6% {
+    height: 6%;
+  }
+  7% {
+    height: 7%;
+  }
+  8% {
+    height: 8%;
+  }
+  9% {
+    height: 9%;
+  }
+  10% {
+    height: 10%;
+  }
+  11% {
+    height: 11%;
+  }
+  12% {
+    height: 12%;
+  }
+  13% {
+    height: 13%;
+  }
+  14% {
+    height: 14%;
+  }
+  15% {
+    height: 15%;
+  }
+  16% {
+    height: 16%;
+  }
+  17% {
+    height: 17%;
+  }
+  18% {
+    height: 18%;
+  }
+  19% {
+    height: 19%;
+  }
+  20% {
+    height: 20%;
+  }
+  21% {
+    height: 21%;
+  }
+  22% {
+    height: 22%;
+  }
+  23% {
+    height: 23%;
+  }
+  24% {
+    height: 24%;
+  }
+  25% {
+    height: 25%;
+  }
+  26% {
+    height: 26%;
+  }
+  27% {
+    height: 27%;
+  }
+  28% {
+    height: 28%;
+  }
+  29% {
+    height: 29%;
+  }
+  30% {
+    height: 30%;
+  }
+  31% {
+    height: 31%;
+  }
+  32% {
+    height: 32%;
+  }
+  33% {
+    height: 33%;
+  }
+  34% {
+    height: 34%;
+  }
+  35% {
+    height: 35%;
+  }
+  36% {
+    height: 36%;
+  }
+  37% {
+    height: 37%;
+  }
+  38% {
+    height: 38%;
+  }
+  39% {
+    height: 39%;
+  }
+  40% {
+    height: 40%;
+  }
+  41% {
+    height: 41%;
+  }
+  42% {
+    height: 42%;
+  }
+  43% {
+    height: 43%;
+  }
+  44% {
+    height: 44%;
+  }
+  45% {
+    height: 45%;
+  }
+  46% {
+    height: 46%;
+  }
+  47% {
+    height: 47%;
+  }
+  48% {
+    height: 48%;
+  }
+  49% {
+    height: 49%;
+  }
+  50% {
+    height: 50%;
+  }
+  51% {
+    height: 51%;
+  }
+  52% {
+    height: 52%;
+  }
+  53% {
+    height: 53%;
+  }
+  54% {
+    height: 54%;
+  }
+  55% {
+    height: 55%;
+  }
+  56% {
+    height: 56%;
+  }
+  57% {
+    height: 57%;
+  }
+  58% {
+    height: 58%;
+  }
+  59% {
+    height: 59%;
+  }
+  60% {
+    height: 60%;
+  }
+  61% {
+    height: 61%;
+  }
+  62% {
+    height: 62%;
+  }
+  63% {
+    height: 63%;
+  }
+  64% {
+    height: 64%;
+  }
+  65% {
+    height: 65%;
+  }
+  66% {
+    height: 66%;
+  }
+  67% {
+    height: 67%;
+  }
+  68% {
+    height: 68%;
+  }
+  69% {
+    height: 69%;
+  }
+  70% {
+    height: 70%;
+  }
+  71% {
+    height: 71%;
+  }
+  72% {
+    height: 72%;
+  }
+  73% {
+    height: 73%;
+  }
+  74% {
+    height: 74%;
+  }
+  75% {
+    height: 75%;
+  }
+  76% {
+    height: 76%;
+  }
+  77% {
+    height: 77%;
+  }
+  78% {
+    height: 78%;
+  }
+  79% {
+    height: 79%;
+  }
+  80% {
+    height: 80%;
+  }
+  81% {
+    height: 81%;
+  }
+  82% {
+    height: 82%;
+  }
+  83% {
+    height: 83%;
+  }
+  84% {
+    height: 84%;
+  }
+  85% {
+    height: 85%;
+  }
+  86% {
+    height: 86%;
+  }
+  87% {
+    height: 87%;
+  }
+  88% {
+    height: 88%;
+  }
+  89% {
+    height: 89%;
+  }
+  90% {
+    height: 90%;
+  }
+  91% {
+    height: 91%;
+  }
+  92% {
+    height: 92%;
+  }
+  93% {
+    height: 93%;
+  }
+  94% {
+    height: 94%;
+  }
+  95% {
+    height: 95%;
+  }
+  96% {
+    height: 96%;
+  }
+  97% {
+    height: 97%;
+  }
+  98% {
+    height: 98%;
+  }
+  99% {
+    height: 99%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes menu-up {
+  0% {
+    height: 100%;
+  }
+  1% {
+    height: 99%;
+  }
+  2% {
+    height: 98%;
+  }
+  3% {
+    height: 97%;
+  }
+  4% {
+    height: 96%;
+  }
+  5% {
+    height: 95%;
+  }
+  6% {
+    height: 94%;
+  }
+  7% {
+    height: 93%;
+  }
+  8% {
+    height: 92%;
+  }
+  9% {
+    height: 91%;
+  }
+  10% {
+    height: 90%;
+  }
+  11% {
+    height: 89%;
+  }
+  12% {
+    height: 88%;
+  }
+  13% {
+    height: 87%;
+  }
+  14% {
+    height: 86%;
+  }
+  15% {
+    height: 85%;
+  }
+  16% {
+    height: 84%;
+  }
+  17% {
+    height: 83%;
+  }
+  18% {
+    height: 82%;
+  }
+  19% {
+    height: 81%;
+  }
+  20% {
+    height: 80%;
+  }
+  21% {
+    height: 79%;
+  }
+  22% {
+    height: 78%;
+  }
+  23% {
+    height: 77%;
+  }
+  24% {
+    height: 76%;
+  }
+  25% {
+    height: 75%;
+  }
+  26% {
+    height: 74%;
+  }
+  27% {
+    height: 73%;
+  }
+  28% {
+    height: 72%;
+  }
+  29% {
+    height: 71%;
+  }
+  30% {
+    height: 70%;
+  }
+  31% {
+    height: 69%;
+  }
+  32% {
+    height: 68%;
+  }
+  33% {
+    height: 67%;
+  }
+  34% {
+    height: 66%;
+  }
+  35% {
+    height: 65%;
+  }
+  36% {
+    height: 64%;
+  }
+  37% {
+    height: 63%;
+  }
+  38% {
+    height: 62%;
+  }
+  39% {
+    height: 61%;
+  }
+  40% {
+    height: 60%;
+  }
+  41% {
+    height: 59%;
+  }
+  42% {
+    height: 58%;
+  }
+  43% {
+    height: 57%;
+  }
+  44% {
+    height: 56%;
+  }
+  45% {
+    height: 55%;
+  }
+  46% {
+    height: 54%;
+  }
+  47% {
+    height: 53%;
+  }
+  48% {
+    height: 52%;
+  }
+  49% {
+    height: 51%;
+  }
+  50% {
+    height: 50%;
+  }
+  51% {
+    height: 49%;
+  }
+  52% {
+    height: 48%;
+  }
+  53% {
+    height: 47%;
+  }
+  54% {
+    height: 46%;
+  }
+  55% {
+    height: 45%;
+  }
+  56% {
+    height: 44%;
+  }
+  57% {
+    height: 43%;
+  }
+  58% {
+    height: 42%;
+  }
+  59% {
+    height: 41%;
+  }
+  60% {
+    height: 40%;
+  }
+  61% {
+    height: 39%;
+  }
+  62% {
+    height: 38%;
+  }
+  63% {
+    height: 37%;
+  }
+  64% {
+    height: 36%;
+  }
+  65% {
+    height: 35%;
+  }
+  66% {
+    height: 34%;
+  }
+  67% {
+    height: 33%;
+  }
+  68% {
+    height: 32%;
+  }
+  69% {
+    height: 31%;
+  }
+  70% {
+    height: 30%;
+  }
+  71% {
+    height: 29%;
+  }
+  72% {
+    height: 28%;
+  }
+  73% {
+    height: 27%;
+  }
+  74% {
+    height: 26%;
+  }
+  75% {
+    height: 25%;
+  }
+  76% {
+    height: 24%;
+  }
+  77% {
+    height: 23%;
+  }
+  78% {
+    height: 22%;
+  }
+  79% {
+    height: 21%;
+  }
+  80% {
+    height: 20%;
+  }
+  81% {
+    height: 19%;
+  }
+  82% {
+    height: 18%;
+  }
+  83% {
+    height: 17%;
+  }
+  84% {
+    height: 16%;
+  }
+  85% {
+    height: 15%;
+  }
+  86% {
+    height: 14%;
+  }
+  87% {
+    height: 13%;
+  }
+  88% {
+    height: 12%;
+  }
+  89% {
+    height: 11%;
+  }
+  90% {
+    height: 10%;
+  }
+  91% {
+    height: 9%;
+  }
+  92% {
+    height: 8%;
+  }
+  93% {
+    height: 7%;
+  }
+  94% {
+    height: 6%;
+  }
+  95% {
+    height: 5%;
+  }
+  96% {
+    height: 4%;
+  }
+  97% {
+    height: 3%;
+  }
+  98% {
+    height: 2%;
+  }
+  99% {
+    height: 1%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes menu-up {
+  0% {
+    height: 100%;
+  }
+  1% {
+    height: 99%;
+  }
+  2% {
+    height: 98%;
+  }
+  3% {
+    height: 97%;
+  }
+  4% {
+    height: 96%;
+  }
+  5% {
+    height: 95%;
+  }
+  6% {
+    height: 94%;
+  }
+  7% {
+    height: 93%;
+  }
+  8% {
+    height: 92%;
+  }
+  9% {
+    height: 91%;
+  }
+  10% {
+    height: 90%;
+  }
+  11% {
+    height: 89%;
+  }
+  12% {
+    height: 88%;
+  }
+  13% {
+    height: 87%;
+  }
+  14% {
+    height: 86%;
+  }
+  15% {
+    height: 85%;
+  }
+  16% {
+    height: 84%;
+  }
+  17% {
+    height: 83%;
+  }
+  18% {
+    height: 82%;
+  }
+  19% {
+    height: 81%;
+  }
+  20% {
+    height: 80%;
+  }
+  21% {
+    height: 79%;
+  }
+  22% {
+    height: 78%;
+  }
+  23% {
+    height: 77%;
+  }
+  24% {
+    height: 76%;
+  }
+  25% {
+    height: 75%;
+  }
+  26% {
+    height: 74%;
+  }
+  27% {
+    height: 73%;
+  }
+  28% {
+    height: 72%;
+  }
+  29% {
+    height: 71%;
+  }
+  30% {
+    height: 70%;
+  }
+  31% {
+    height: 69%;
+  }
+  32% {
+    height: 68%;
+  }
+  33% {
+    height: 67%;
+  }
+  34% {
+    height: 66%;
+  }
+  35% {
+    height: 65%;
+  }
+  36% {
+    height: 64%;
+  }
+  37% {
+    height: 63%;
+  }
+  38% {
+    height: 62%;
+  }
+  39% {
+    height: 61%;
+  }
+  40% {
+    height: 60%;
+  }
+  41% {
+    height: 59%;
+  }
+  42% {
+    height: 58%;
+  }
+  43% {
+    height: 57%;
+  }
+  44% {
+    height: 56%;
+  }
+  45% {
+    height: 55%;
+  }
+  46% {
+    height: 54%;
+  }
+  47% {
+    height: 53%;
+  }
+  48% {
+    height: 52%;
+  }
+  49% {
+    height: 51%;
+  }
+  50% {
+    height: 50%;
+  }
+  51% {
+    height: 49%;
+  }
+  52% {
+    height: 48%;
+  }
+  53% {
+    height: 47%;
+  }
+  54% {
+    height: 46%;
+  }
+  55% {
+    height: 45%;
+  }
+  56% {
+    height: 44%;
+  }
+  57% {
+    height: 43%;
+  }
+  58% {
+    height: 42%;
+  }
+  59% {
+    height: 41%;
+  }
+  60% {
+    height: 40%;
+  }
+  61% {
+    height: 39%;
+  }
+  62% {
+    height: 38%;
+  }
+  63% {
+    height: 37%;
+  }
+  64% {
+    height: 36%;
+  }
+  65% {
+    height: 35%;
+  }
+  66% {
+    height: 34%;
+  }
+  67% {
+    height: 33%;
+  }
+  68% {
+    height: 32%;
+  }
+  69% {
+    height: 31%;
+  }
+  70% {
+    height: 30%;
+  }
+  71% {
+    height: 29%;
+  }
+  72% {
+    height: 28%;
+  }
+  73% {
+    height: 27%;
+  }
+  74% {
+    height: 26%;
+  }
+  75% {
+    height: 25%;
+  }
+  76% {
+    height: 24%;
+  }
+  77% {
+    height: 23%;
+  }
+  78% {
+    height: 22%;
+  }
+  79% {
+    height: 21%;
+  }
+  80% {
+    height: 20%;
+  }
+  81% {
+    height: 19%;
+  }
+  82% {
+    height: 18%;
+  }
+  83% {
+    height: 17%;
+  }
+  84% {
+    height: 16%;
+  }
+  85% {
+    height: 15%;
+  }
+  86% {
+    height: 14%;
+  }
+  87% {
+    height: 13%;
+  }
+  88% {
+    height: 12%;
+  }
+  89% {
+    height: 11%;
+  }
+  90% {
+    height: 10%;
+  }
+  91% {
+    height: 9%;
+  }
+  92% {
+    height: 8%;
+  }
+  93% {
+    height: 7%;
+  }
+  94% {
+    height: 6%;
+  }
+  95% {
+    height: 5%;
+  }
+  96% {
+    height: 4%;
+  }
+  97% {
+    height: 3%;
+  }
+  98% {
+    height: 2%;
+  }
+  99% {
+    height: 1%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+.about {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.about .intro-img {
+  width: 40%;
+}
+@media (max-width: 900px) {
+  .about .intro-img {
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .about .intro-img {
+    width: 80%;
+  }
+}
+.about .rectangle {
+  width: 100%;
+  position: relative;
+  background-color: #ff265e;
+  height: 18rem;
+}
+.about .rectangle h2 {
+  font-size: 2.8rem;
+}
+.about .big-card {
+  transform: translateY(-80px);
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f5f4f5;
+  color: black;
+  border-radius: 21px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .about .big-card {
+    width: 90%;
+  }
+}
+.about .big-card hr {
+  background-color: #828282;
+  margin: 0;
+  height: auto;
+  width: 2px;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  .about .big-card hr {
+    height: 2px;
+    width: 100%;
+  }
+}
+.about .big-card side1,
+.about .big-card side2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.about .big-card side1 ul,
+.about .big-card side2 ul {
+  list-style: none;
+  margin-bottom: 90px;
+  padding: 0;
+}
+.about .big-card side1 ul li,
+.about .big-card side2 ul li {
+  margin-bottom: 10px;
+}
+.about .big-card side1 h5,
+.about .big-card side2 h5 {
+  color: #ff4273;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.about .big-card side1 h6,
+.about .big-card side2 h6 {
+  margin-bottom: 50px;
+}
+.about .big-card side1 .br-text,
+.about .big-card side2 .br-text {
+  line-height: 1.6rem;
+}
+.about .big-card side1 h4,
+.about .big-card side2 h4 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.about .big-card side1 p,
+.about .big-card side2 p {
+  color: #141c3a;
+  font-size: 1rem;
+}
+.about .big-card side1 .icon,
+.about .big-card side2 .icon {
+  width: 69px;
+  height: 65px;
+  padding: 10px;
+}
+.about .big-card side2 {
+  margin-top: 50px;
+}
+
+.projects {
+  width: 100%;
+  color: white;
+}
+.projects h6 {
+  color: #797575;
+  font-size: 0.9rem;
+}
+.projects h2 {
+  font-size: 2.5rem;
+}
+.projects .projs-boxs > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects .projs-boxs > div .number {
+  position: absolute;
+  right: 80px;
+}
+.projects .projs-boxs > div .proj-card {
+  gap: 25px;
+  margin: 80px 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  background: linear-gradient(180deg, #1f2748 0%, rgba(17, 26, 58, 0.34) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.projects .projs-boxs > div .proj-card h4 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+.projects .projs-boxs > div .proj-card img {
+  height: 90%;
+  width: 62%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 900px) {
+  .projects .projs-boxs > div .proj-card img {
+    width: 100%;
+  }
+}
+.projects .projs-boxs > div .proj-card a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.projects .projs-boxs > div .proj-card a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff265e;
+  transform-origin: bottom right;
+  transition: transform 0.45s ease-in-out;
+}
+.projects .projs-boxs > div .proj-card a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.projects .projs-boxs > div .proj-card .proj-info img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+.projects .projs-boxs > div .proj-card .proj-info .tools {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.projects .projs-boxs > div .proj-card .proj-info .tools > div {
+  width: 100px;
+  font-weight: bold;
+  height: 27px;
+  border-radius: 15px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+.contact {
+  text-transform: capitalize;
+}
+.contact h6,
+.contact p {
+  color: #797575;
+  font-size: 0.9rem;
+}
+.contact .medai {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 2rem 0 4rem;
+  flex-wrap: wrap;
+}
+.contact .medai a {
+  color: white;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contact .medai a:hover {
+  color: #ff4273;
+}
+.contact .email {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.contact .email h5 {
+  color: #797575;
+  font-size: 1.1rem;
+}
+.contact .email h3 {
+  font-size: 1.9rem;
+  color: white;
+  text-transform: lowercase;
+}
+.contact h2 {
+  font-size: 3rem;
+}
+.contact h2 span {
+  font-weight: bold;
+  background: linear-gradient(90deg, #fd7497 5.2%, #8dffd9 41.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+footer .start {
+  flex-wrap: wrap;
+  z-index: 20;
+  position: relative;
+  top: 3.5rem;
+  background-color: #141c3a;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  height: 7rem;
+  padding: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  footer .start {
+    justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 25px;
+  }
+}
+footer .start button {
+  padding: 8px 20px;
+  color: white;
+  text-transform: capitalize;
+  background: transparent;
+  border: #5be9b9 solid 2px;
+}
+footer .start button:hover {
+  background-color: rgba(74, 206, 162, 0.2117647059);
+}
+footer .start p {
+  text-align: center;
+}
+footer .box {
+  height: 8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer .box span {
+  color: #ff4273;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
